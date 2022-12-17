@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de notas con Firebase</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <form id="datos">
+        <!-- Todos los elementos del forumulario deben llevar un id -->
+        <!-- Titulo -->
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" placeholder="Introduzca un título" />
+        <!-- Descripcion -->
+        <label for="descripcion">Descripción</label>
+        <textarea name="descripcion" id="descripcion" 
+        cols="30" rows="10" 
+        placeholder="Introduzca una descripción">
+    </textarea>
+        <!-- Prioridad -->
+        <label for="prioridad">Prioridad</label>
+        <select name="prioridad" id="prioridad">
+            <option value="alta">Alta</option>
+            <option value="media">Media</option>
+            <option value="baja">Baja</option>
+        </select>
+        <!-- Fecha de registro -->
+        <label for="fecha_registro">Fecha de registro</label>
+        <input type="date" id="fecha_registro" />
+        <!-- Fecha de vencimiento -->
+        <label for="fecha_vencimiento">Fecha de vencimiento</label>
+        <input type="date" id="fecha_vencimiento" />
+    </form>
+    <script src="./firebase.js" type="module"></script>
+</body>
+</html>
